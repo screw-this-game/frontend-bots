@@ -29,8 +29,8 @@ let clientID;
 
 const makeReq = effect => {
     let options = {
-        method: 'POST',
-        uri: `https://stg-api.monotron.me/${clientID}/effects`,
+        method: 'PUT',
+        uri: `https://stg-api.monotron.me/frontend/effects/${clientID}?effectName=${effect}`,
         headers: {
             'Content-Type': 'application/json'
         },
