@@ -1,5 +1,5 @@
 {
-  "name": "stg-twitchbot",
+  "name": "stg-discord",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tmi.js": "^1.5.0",
+    "discord.js": "^11.5.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.5"
   }

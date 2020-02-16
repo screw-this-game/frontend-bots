@@ -1,6 +1,6 @@
 const tmi = require('tmi.js');
 const config = require('./config')
-
+const rp = require('request-promise')
 const opts = {
   identity: {
     username: config.BOT_USERNAME,
@@ -18,7 +18,7 @@ let onMessageHandler = (target, context, msg, self) => {
 	if (message.startsWith('/register')) //Streamer will register their ID with the bot first, so it can cache it, so viewers don't need to type it in
 		clientID = split[1];
 
-  	else queue.push({});
+  	else queue.push(split[1]);
 };
 
 const client = new tmi.client(opts);
