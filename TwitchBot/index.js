@@ -36,7 +36,6 @@ const makeReq = effect => {
         },
         json: true,
         body: {
-            "effect": effect,
         }
     };
 
